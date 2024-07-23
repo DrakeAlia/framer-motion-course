@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 import { motion, useAnimationControls } from "framer-motion";
 
@@ -5,6 +7,7 @@ const AnimationControls = () => {
   const controls = useAnimationControls();
 
   const handleClick = () => {
+    // Do some animation stuff
     controls.start("flip");
   };
 
