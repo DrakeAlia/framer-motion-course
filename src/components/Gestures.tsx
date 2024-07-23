@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 import { motion, MotionConfig } from "framer-motion";
 
@@ -18,15 +20,25 @@ const Gestures = () => {
         }}
       >
         <motion.button
-          whileHover={{ scale: 1.05 }}
-          whileTap={{ scale: 0.95, rotate: "2.5deg" }}
+          whileHover={{
+            scale: 1.05,
+          }}
+          whileTap={{
+            scale: 0.95,
+            rotate: "2.5deg",
+          }}
           className="example-button"
         >
           Click me!
         </motion.button>
         <motion.button
-          whileHover={{ scale: 1.15 }}
-          whileTap={{ scale: 0.85, rotate: "-2.5deg" }}
+          whileHover={{
+            scale: 1.15,
+          }}
+          whileTap={{
+            scale: 0.85,
+            rotate: "-2.5deg",
+          }}
           style={{ backgroundColor: "red" }}
           className="example-button"
         >
