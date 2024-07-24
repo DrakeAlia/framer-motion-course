@@ -3,6 +3,8 @@
 import { useScroll, motion, useSpring, useTransform } from "framer-motion";
 import React from "react";
 
+// This file demonstrates scroll-based animations:
+
 const ScrollAnimations = () => {
   const { scrollYProgress } = useScroll();
 
@@ -175,3 +177,13 @@ const ScrollAnimations = () => {
 };
 
 export default ScrollAnimations;
+
+// It uses the useScroll hook to track the scroll progress of the page.
+
+// A progress bar is created at the top of the page using a motion.div.
+
+// The scaleX of the progress bar is animated using useSpring for smooth animation.
+
+// The background color of the progress bar transitions from purple to green as the user scrolls.
+
+// The rest of the component contains Lorem Ipsum text to allow for scrolling.

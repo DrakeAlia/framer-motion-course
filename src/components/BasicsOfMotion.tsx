@@ -3,6 +3,8 @@
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
+// This file demonstrates basic motion animations and the use of AnimatePresence:
+
 const BasicsOfMotion = () => {
   const [isVisible, setIsVisible] = useState(true);
   return (
@@ -57,3 +59,13 @@ const BasicsOfMotion = () => {
 };
 
 export default BasicsOfMotion;
+
+// It uses a state variable isVisible to control the visibility of an animated element.
+
+// A button toggles the visibility state.
+
+// The AnimatePresence component is used to animate the exit of the element when it's removed from the DOM.
+
+// The animated div has complex animations defined for its initial appearance, continuous animation, and exit.
+
+// The animation includes rotation, scaling, and a complex y-axis movement.

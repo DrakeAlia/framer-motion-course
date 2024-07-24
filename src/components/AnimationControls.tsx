@@ -3,6 +3,8 @@
 import React from "react";
 import { motion, useAnimationControls } from "framer-motion";
 
+// This file demonstrates the use of animation controls in Framer Motion.
+
 const AnimationControls = () => {
   const controls = useAnimationControls();
 
@@ -45,3 +47,17 @@ const AnimationControls = () => {
 };
 
 export default AnimationControls;
+
+// The component uses the useAnimationControls hook from Framer Motion to create a control object.
+
+// A button is rendered that, when clicked, triggers the handleClick function.
+
+// The handleClick function calls controls.start("flip"), which starts the "flip" animation.
+
+// A motion.div is rendered with a black background and specific dimensions.
+
+// The motion.div has variants defined, which specify different states of the animation ("initial" and "flip").
+
+// The animate prop of the motion.div is set to the controls object, allowing the animation to be controlled programmatically.
+
+// When the button is clicked, the black square will rotate 360 degrees.
